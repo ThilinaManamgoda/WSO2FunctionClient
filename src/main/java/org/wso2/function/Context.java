@@ -19,5 +19,17 @@
 
 package org.wso2.function;
 
-public class Context {
+public interface Context {
+
+    /**
+     * Return the Lambda Function name user entered when Lambda Apptype is created.
+     * @return
+     */
+    public String getFunctionName();
+
+    /**
+     * return the owner
+     * @return
+     */
+    public String getTenant();
 }
